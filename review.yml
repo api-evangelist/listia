@@ -1,0 +1,50 @@
+generated: '2026-07-19'
+method: searched
+slug: listia
+name: Listia
+verdict: no-public-api-program
+summary: >-
+  Listia is a live consumer peer-to-peer marketplace (Points-based, a16z-backed, 2009)
+  with an active website, Zendesk help center, blog, and iOS/Android apps — but no
+  developer-facing surface of any kind. Enrichment produced identity and security
+  artifacts only; there is nothing to ground spec, SDK, MCP, skills, or convention
+  artifacts in, so none were fabricated.
+evidence:
+- check: developer portal
+  result: absent
+  detail: developer.listia.com does not resolve (DNS NXDOMAIN); /developers and /api both 404.
+- check: api host
+  result: not-a-public-api
+  detail: >-
+    api.listia.com returns HTTP 200 serving the same nginx + Phusion Passenger Rails
+    application as the website (sets the same region/sift_session cookies). /v1 and /api
+    return 404. It is the private mobile-app backend, not a documented public API.
+- check: machine-readable specs
+  result: none
+  detail: No OpenAPI, Swagger, AsyncAPI, GraphQL, or Protobuf published on the site or GitHub org.
+- check: package registries
+  result: none
+  detail: >-
+    npm, PyPI, RubyGems, and Packagist searched for "listia" — zero first-party client
+    libraries. github.com/listia holds only third-party forks (Rails gems, infrastructure
+    cookbooks, Minecraft server tooling), no SDK and no API definition.
+- check: /.well-known/
+  result: none
+  detail: security.txt, openid-configuration, oauth-authorization-server, api-catalog,
+    ai-plugin.json, and /llms.txt all 404 on www.listia.com; security.txt 404 on api.listia.com.
+- check: vulnerability disclosure
+  result: none
+  detail: probe-security-programs.py found no security.txt, disclosure page, or bug bounty program.
+- check: trust center
+  result: none
+  detail: probe-security-programs.py found no trust/compliance surface or named certifications.
+- check: domain security
+  result: probed
+  detail: >-
+    www.listia.com serves TLS 1.3 with no HSTS; listia.com has CAA records and SPF and
+    DMARC, DMARC policy p=none, DNSSEC not enabled. See security/listia-domain-security.yml.
+skipped_artifacts:
+  reason: no OpenAPI or public API documentation to ground them in
+  artifacts: [openapi, asyncapi, json-schema, overlays, grpc, mcp, skills, scopes,
+    authentication, conventions, errors, data-model, lifecycle, changelog, cli,
+    components, sandbox, conformance, arazzo, integrations, agentic-access, packages]
