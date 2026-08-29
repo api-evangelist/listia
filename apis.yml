@@ -14,6 +14,17 @@ description: 'Listia is a peer-to-peer marketplace where members give away and a
   Packagist. The api.listia.com host serves the same Rails application as the website
   and acts as the private backend for the mobile apps, not a documented public API.'
 url: https://raw.githubusercontent.com/api-evangelist/listia/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
