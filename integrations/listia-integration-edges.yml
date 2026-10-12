@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/listia/integrations
+- https://n8n.io/integrations/listia/
+- https://composio.dev/toolkits/listia
+- https://monid.ai/tools/listia
+checked:
+- https://composio.dev/toolkits/listia
+- https://monid.ai/tools/listia
+- https://n8n.io/integrations/listia/
+- https://zapier.com/apps/listia/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
