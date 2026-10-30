@@ -64,15 +64,85 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Listia is a peer-to-peer marketplace where members give away and acquire secondhand goods
-using an internal virtual currency ("Points") rather than cash. Launched in 2009 and backed
-by Andreessen Horowitz, it runs a web marketplace plus iOS and Android apps, and reports
-over 10 million members.
+Listia is a peer-to-peer marketplace where members give away and acquire secondhand goods using an internal virtual currency ("Points") rather than cash. Launched in 2009 and backed by Andreessen Horowitz, the service lets members list unwanted items in auction-style listings, earn Points when an item sells, and spend those Points to claim items from other members — a closed-loop credit-and-reputation economy layered on a classic online-auction flow. The site reports over 10 million members, operates iOS and Android apps alongside the web marketplace, and runs adjacent programs including Listia Rewards (redeeming Points for gift cards and retail goods) and Listia Assurance (buyer and seller protection). Listia publishes no public developer program: there is no developer portal, no API documentation, no OpenAPI or other machine-readable specification, and no first-party SDKs on npm, PyPI, RubyGems or Packagist. The api.listia.com host serves the same Rails application as the website and acts as the private backend for the mobile apps, not a documented public API.
 
-**No public API program.** There is no developer portal, no API documentation, no
-machine-readable specification (OpenAPI/AsyncAPI/GraphQL/Protobuf), and no first-party SDKs
-on npm, PyPI, RubyGems, or Packagist. `api.listia.com` serves the same Rails application as
-the website and is the private backend for the mobile apps, not a documented public API.
-See `review.yml` for the full evidence trail.
+**Areas:** Company · Marketplace · E-Commerce · Peer-to-Peer · Auctions · Reuse · Secondhand · Virtual Currency · Consumer · Mobile App
 
-Backed by: a16z
+## Listia on APIs.io
+
+Everything profiled for Listia is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/listia/](https://apis.io/providers/listia/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Listia Domain Security](https://apis.io/security/listia/listia-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.listia.com/)
+- [Sign up](https://www.listia.com/signup)
+- [Support](https://help.listia.com/hc/en-us)
+- [Blog](https://blog.listia.com/)
+- [Terms of service](https://www.listia.com/terms)
+- [Privacy policy](https://www.listia.com/privacy)
+- [GitHub](https://github.com/listia)
+
+## API Evangelist rating
+
+**Kin Score 14.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 34.2 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/listia/](https://apis.io/providers/listia/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Listia: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/listia/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
